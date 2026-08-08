@@ -15,7 +15,7 @@ int main() {
     if (operation == '/' && b == 0) {
         printf("Invalid input\n");
     } else {
-        int result = calculate(a, b, operation);
+        int result = calculate(a, b  operation);
     printf("%d\n", result);
     return 0;
     }
@@ -38,6 +38,7 @@ int divide(int a, int b) {
     if (b != 0) {
         return a / b;
     }
+    return 0;
 }
 
 int calculate(int a, int b, char operation) {
